@@ -1,4 +1,5 @@
 library(shiny)
+library(markdown)
 
 source("functions.R")
 source("parameters.R")
@@ -6,8 +7,8 @@ source("parameters.R")
 shinyUI(
   fluidPage(
     titlePanel(
-      "AA",
-      title = tags$strong("AA")
+      "meta",
+      title = tags$strong("Metabolic Difference between Race/Ethnicity Groups")
     ),
     
     sidebarLayout(
@@ -53,7 +54,7 @@ shinyUI(
           
           tabPanel(
             "About",
-            includeMarkdown("content/About.md")
+            includeMarkdown("content/about.md")
           )
         )
       ),
